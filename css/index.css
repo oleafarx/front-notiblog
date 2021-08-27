@@ -71,6 +71,10 @@ body{
     padding-bottom: 10px;
 }
 
+/*Bajamos la velocidad de transición para que se aprecie
+translate3d traslada el componente, pasará al realizar un hover
+AL hacer hover, bajamos la opacidad y sube la opacidad solo del item 
+que se está pasando el mouse*/
 .main-carrousel-item {
     width: 200px;
     height: 250px;
@@ -95,12 +99,15 @@ body{
     opacity: 1;
 }
 
+/*Object-fit en cover ajusta la imagen al tamaño del contenedor*/
 .carrousel-item-img {
     width: 200px;
     height: 250px;
     object-fit: cover;
 }
 
+/*Colocamos todo en opacidad 0 y hover dejamos opacidad 1, para que solo muestre al
+pasar el mouse*/
 .item-details {
     background: linear-gradient(to top rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
     font-size: 10px;
