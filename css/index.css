@@ -144,7 +144,7 @@ pasar el mouse*/
 }
 
 .entrada-1 {
-    height: 500px;
+    min-height: 500px;
     width: 23%;
     border: 1px solid #6a040f;
     border-radius: 10px;
@@ -176,12 +176,13 @@ pasar el mouse*/
 }
 
 footer {
-    display: flex;
+    display: grid;
     align-items: center;
     background: #6a040f;
     height: 40px;
-    padding: 8px;
-    width: 100%;
+    padding: 4px;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer a {
@@ -196,4 +197,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.a-left {
+    justify-self: left;
+}
+
+.a-right {
+    justify-self: right;
+}
 
